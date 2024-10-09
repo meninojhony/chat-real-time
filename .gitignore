@@ -1,0 +1,61 @@
+# Ignore os arquivos compilados do Python
+*.pyc
+__pycache__/
+
+# Ignore as pastas de ambientes virtuais (venv)
+env/
+venv/
+ENV/
+.VENV/
+
+# Ignore o arquivo de banco de dados SQLite
+db.sqlite3
+
+# Ignore arquivos de migrações do Django (opcional se você quer gerenciá-las separadamente)
+**/migrations/*.pyc
+**/migrations/*.py
+
+# Ignore pastas de cache
+*.log
+*.pot
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+__pycache__/
+*.pyo
+
+# Ignore configurações específicas de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore arquivos de log do Django
+*.log
+
+# Ignore arquivos de media e uploads (se aplicável)
+media/
+uploads/
+
+# Ignore arquivos estáticos (se forem gerados durante o build)
+staticfiles/
+static/
+
+# Ignore arquivos do coverage (se você estiver rodando testes de cobertura)
+htmlcov/
+.coverage
+
+# Ignore configurações de pacotes que não precisam ir para o repositório
+*.env
+.env.local
+.env.production
+.env.test
+
+# Ignore node_modules caso você use frontend com JavaScript/TypeScript
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
