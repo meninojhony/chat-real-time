@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-tf@oc*3-jz_&wt_u8pd2x4ow1t-qr=l4gd$&@3!ix3q1$7(^a#
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CURRENT_URL = "http://127.0.0.1:8000"
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000'
@@ -45,8 +46,11 @@ INSTALLED_APPS = [
     # Rest Framework
     'rest_framework',
 
-    #Cors
+    # Cors
     'corsheaders',
+
+    # Apps,
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -115,6 +119,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = "accounts.User"
 
 
 # Internationalization
